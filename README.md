@@ -42,4 +42,4 @@ I trained the graph on 150 images of tennis balls, and 60 miscellaneous images
 
 # Notes
 
-The program finds whatever you trained the graph on
+The program finds whatever you trained the graph on, not neccessarily tennis balls.
