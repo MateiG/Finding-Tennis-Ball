@@ -95,7 +95,7 @@ for cnt in contour_list:
 	cX = int(M["m10"] / M["m00"])
 	cY = int(M["m01"] / M["m00"])
 	roi = img[cY - 50:cY + 50, cX - 50:cX + 50]
-	roiFilename = 'C:/Matei/Python/TENNISBALL/MOREADVANCED/roi' + str(timer) + '.png'
+	roiFilename = 'where to write the ROI' + str(timer) + '.png'
 	coordinates_of_roi.append([cX,cY])
 	cv2.imwrite(roiFilename, roi)
 	image_data = load_image(roiFilename)
@@ -114,7 +114,7 @@ def identify():
 
 	roi_img_number = potential_matches[location - 1]
 
-	correct_roi = cv2.imread('C:/Matei/Python/TENNISBALL/MOREADVANCED/roi' + str(roi_img_number) + '.png')
+	correct_roi = cv2.imread('where to retreive the ROI (same as on line 98)' + str(roi_img_number) + '.png')
 	print(coordinates_of_roi[roi_img_number - 1])
 	cv2.imshow('Found It!', correct_roi)
 try:
