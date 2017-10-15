@@ -4,7 +4,7 @@ import tensorflow as tf
 import os
 
 
-imageFilename = 'tennisball.png'
+imageFilename = 'picture'
 labelsFilename = 'retrained_labels.txt'
 graphFilename = 'retrained_graph.pb'
 img = cv2.imread(imageFilename)
