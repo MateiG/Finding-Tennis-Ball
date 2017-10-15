@@ -1,5 +1,6 @@
 # Finding-Tennis-Ball
-Finding a tennis ball in a picture using a combination of techniques: machine learning (tensorflow), and Region of Image selection, for finding potential matches
+Finding a tennis ball in a picture using a combination of techniques: machine learning (tensorflow), and Region of Image selection, for finding potential matches. It's way slower than the object-detection api provided by tensorflow: https://github.com/tensorflow/models/tree/master/research/object_detection
+
 
 # Requirements:
 
