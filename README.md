@@ -28,8 +28,11 @@ Run it on your selected image, wait, and Voila!
 main.py works like this:
 
 Blur image
+
 Find contours
+
 Foreach contour, select ROI 100 x 100 pixels centered at the contour, then run the graph on it
+
 If graph result for image is > 90% for tennis ball, then save it, and show that ROI.
 
 This process takes 20 seconds for the image provided. 
