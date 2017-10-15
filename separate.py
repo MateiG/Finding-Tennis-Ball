@@ -2,7 +2,7 @@ import numpy as np
 import cv2
 import time
 
-cap = cv2.VideoCapture('C:/Matei/Python/TENNISBALL/MOREADVANCED/tennisvideo.mp4')
+cap = cv2.VideoCapture('video file')
 start = time.time()
 name = 1
 
