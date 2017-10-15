@@ -35,8 +35,7 @@ Foreach contour, select ROI 100 x 100 pixels centered at the contour, then run t
 
 If graph result for image is > 90% for tennis ball, then save it, and show that ROI.
 
-This process takes 20 seconds for the image provided. 
+This process takes different amounts of time based on the number of contours in your image, the number of images you trained you graph on, etc.
 
-I trained the graph on 150 images of tennis balls.
-And 60 miscellaneous images
+I trained the graph on 150 images of tennis balls, and 60 miscellaneous images
 
