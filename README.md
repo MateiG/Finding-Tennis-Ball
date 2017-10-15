@@ -1,2 +1,39 @@
 # Finding-Tennis-Ball
-Finding a tennis ball in a picture using a combination of techniques: machine learning (tensorflow), Region of Image selection, for finding potential matches
+Finding a tennis ball in a picture using a combination of techniques: machine learning (tensorflow), and Region of Image selection, for finding potential matches
+
+# Requirements:
+
+Tensorflow: https://www.tensorflow.org/install/
+
+Opencv: https://opencv.org/releases.html
+
+Python 3.6: https://www.python.org/
+
+# Process
+
+I couldn't upload retrained_graph.pb since it exceeded the 25 MB limit on Github upload. 
+However, you can make one yourself by retraining Inception's final layer. Google has a nice, and easy to follow Codelab:
+
+Tensorflow for poets: https://codelabs.developers.google.com/codelabs/tensorflow-for-poets/#0
+
+To get the pictures for the positive images, you can just take a video and then separate the frames using separate.py, and changing the video filename.
+
+Go through the codelab, and get the retrained_graph.pb and retrained_labels.txt file.
+
+Change the imageFilename, labelsFilename, and graphFilename variables at the beginning of main.py.
+Run it on your selected image, wait, and Voila!
+
+# Extreme Latency
+
+main.py works like this:
+
+Blur image
+Find contours
+Foreach contour, select ROI 100 x 100 pixels centered at the contour, then run the graph on it
+If graph result for image is > 90% for tennis ball, then save it, and show that ROI.
+
+This process takes 20 seconds for the image provided. 
+
+I trained the graph on 150 images of tennis balls.
+And 60 miscellaneous images
+
